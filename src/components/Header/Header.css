@@ -1,0 +1,107 @@
+.header-section {
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 99;
+}
+
+@media (min-width: 48em) {
+  .header-section {
+    padding: 2.5rem 0;
+  }
+}
+
+.header__logo-link {
+  max-width: 10rem;
+}
+
+.header__nav-list {
+  position: absolute;
+  background-color: var(--black);
+  list-style: none;
+  gap: 1rem;
+  flex-direction: column;
+  height: 45vh;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-left: 1.5rem;
+  transition: all 0.4s ease;
+  z-index: 99;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+.header__nav-list[data-visible="true"] {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.header__nav-link {
+  font-size: var(--font-size-300);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-1);
+  color: var(--white);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.header__mobile-nav-toggle {
+  display: block;
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  background: transparent url("../../assets/shared/mobile/icon-hamburger.svg")
+    no-repeat center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.header__mobile-nav-toggle[aria-expanded="true"] {
+  background-image: url("../../assets/shared/mobile/icon-close.svg");
+}
+
+@media (min-width: 48em) {
+  .header__nav-list {
+    background-color: var(--white);
+    position: static;
+    height: 100%;
+    padding-left: 0;
+    gap: 2rem;
+    flex-direction: row;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .header__nav-link {
+    color: hsl(var(--raw-black), 0.8);
+  }
+
+  .header__nav-link:hover {
+    color: var(--black);
+    border-color: var(--black);
+  }
+
+  .header__mobile-nav-toggle {
+    display: none;
+  }
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  inset: 0;
+  background-color: hsl(var(--raw-black), 0.4);
+  z-index: 2;
+}
+
+.overlay.hidden {
+  display: none;
+}

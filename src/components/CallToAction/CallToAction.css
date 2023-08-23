@@ -1,0 +1,31 @@
+.call-to-action {
+  padding: 4rem clamp(1rem, 3vh, 5rem);
+  border-radius: 0.75rem;
+  background-image: url("../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.call-to-action__text-content {
+  text-align: center;
+  place-items: center;
+}
+
+.call-to-action__btn {
+  place-self: center;
+}
+
+@media (min-width: 32em) {
+  .call-to-action {
+    padding-inline: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .call-to-action__text-content {
+    text-align: left;
+  }
+
+  .call-to-action__btn {
+    margin-left: auto;
+  }
+}
