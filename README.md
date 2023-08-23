@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![](../designo-multi-page-website/screenshot/Screenshot.png)
+![](screenshot/Screenshot.png)
 
 ### Links
 
@@ -10,9 +10,7 @@
 
 ### Built with
 
-- HTML
-- SCSS
-- Vanilla Javascript
+- React
 
 ## Author
 - Frontend Mentor - [@krutagna10](https://www.frontendmentor.io/profile/krutagna10)
