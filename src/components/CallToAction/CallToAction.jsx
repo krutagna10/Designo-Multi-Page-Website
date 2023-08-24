@@ -1,4 +1,5 @@
 import "./CallToAction.css";
+import { Link } from "react-router-dom";
 
 function CallToAction() {
   return (
@@ -14,9 +15,9 @@ function CallToAction() {
           </p>
         </div>
         <div className="call-to-action__btn-wrapper grid">
-          <a href="/contact" className="call-to-action__btn btn btn--light">
+          <Link to="/contact" className="call-to-action__btn btn btn--light">
             Get in Touch
-          </a>
+          </Link>
         </div>
       </div>
     </section>

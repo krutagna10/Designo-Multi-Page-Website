@@ -1,7 +1,7 @@
-import "./Features.css";
 import illustrationPassionate from "../../assets/home/desktop/illustration-passionate.svg";
 import illustrationResourceFul from "../../assets/home/desktop/illustration-resourceful.svg";
 import illustrationFriendly from "../../assets/home/desktop/illustration-friendly.svg";
+import "./Features.css";
 
 const features = [
   {

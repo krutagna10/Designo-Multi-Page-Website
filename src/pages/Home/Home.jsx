@@ -4,6 +4,25 @@ import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import heroPhoneImage from "../../assets/home/desktop/image-hero-phone.png";
 import Features from "../../components/Features/Features.jsx";
 import "./Home.css";
+import Service from "../../components/Service/Service.jsx";
+
+const services = [
+  {
+    className: "service--web",
+    title: "Web Design",
+    to: "/web-design",
+  },
+  {
+    className: "service--app",
+    title: "App Design",
+    to: "/app-design",
+  },
+  {
+    className: "service--graphic",
+    title: "Graphic Design",
+    to: "/graphic-design",
+  },
+];
 
 function Home() {
   return (
@@ -35,43 +54,16 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="services-section section-padding">
-        <div className="container grid grid--2-columns">
-          <Link
-            to="/web-design"
-            className="service service--web grid grid--content-center grid-gap"
-          >
-            <span className="service__heading secondary-heading letter-spacing-1">
-              Web Design
-            </span>
-            <span className="service__text font-size-100 letter-spacing-2">
-              View Projects <span className="service__link-symbol">&#62;</span>
-            </span>
-          </Link>
-
-          <Link
-            to="app-design"
-            className="service service--app grid grid--content-center grid-gap"
-          >
-            <span className="service__heading secondary-heading letter-spacing-1">
-              App Design
-            </span>
-            <span className="service__text font-size-100 letter-spacing-2">
-              View Projects <span className="service__link-symbol">&#62;</span>
-            </span>
-          </Link>
-
-          <Link
-            to="graphic-design"
-            className="service service--graphic grid grid--content-center grid-gap"
-          >
-            <span className="service__heading secondary-heading letter-spacing-1">
-              Graphic Design
-            </span>
-            <span className="service__text font-size-100 letter-spacing-2">
-              View Projects <span className="service__link-symbol">&#62;</span>
-            </span>
-          </Link>
+      <section className="services__section section-padding">
+        <div className="container service__container grid grid--2-columns">
+          {services.map((service, index) => (
+            <Service
+              key={index}
+              title={service.title}
+              to={service.to}
+              className={service.className}
+            />
+          ))}
         </div>
       </section>
       <Features />

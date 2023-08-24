@@ -1,0 +1,21 @@
+.hero-design {
+  min-height: 18rem;
+  gap: 3rem;
+  border-radius: var(--border-radius-1);
+  background-repeat: no-repeat;
+  background-image: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+  background-position: right bottom;
+}
+
+@media (min-width: 48em) {
+  .hero-design__text-content {
+    width: 50%;
+  }
+}
+
+@media (min-width: 32em) {
+  .hero-design {
+    background-image: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
+    background-position: right center;
+  }
+}

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logoDark from "../../assets/shared/desktop/logo-dark.png";
 import "./Header.css";
+import { useState } from "react";
 
 const HEADER_LINKS = [
   {
@@ -18,6 +19,12 @@ const HEADER_LINKS = [
 ];
 
 function Header() {
+  const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+
+  function handleToggleIsNavigationOpen() {
+    setIsNavigationOpen((prevIsNavigationOpen) => !prevIsNavigationOpen);
+  }
+
   return (
     <div>
       <header className="header-section background-white">
@@ -30,7 +37,7 @@ function Header() {
             <ul
               id="header__nav-list"
               className="header__nav-list flex"
-              data-visible="false"
+              data-visible={isNavigationOpen}
             >
               {HEADER_LINKS.map((link, index) => (
                 <li key={index}>
@@ -45,7 +52,8 @@ function Header() {
           <button
             className="header__mobile-nav-toggle"
             aria-controls="header__nav-list"
-            aria-expanded="false"
+            aria-expanded={isNavigationOpen}
+            onClick={handleToggleIsNavigationOpen}
           >
             <span className="sr-only">Menu</span>
           </button>

@@ -66,121 +66,22 @@
   }
 }
 
-.service {
-  min-height: 15rem;
-  border-radius: 0.75rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-  color: var(--white);
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.service::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: hsl(var(--raw-black), 0.45);
-  transition: all 0.4s ease;
-}
-
-.service:hover::before {
-  background-color: hsl(var(--raw-peach), 0.5);
-}
-
-.service__heading,
-.service__text {
-  position: relative;
-  z-index: 999;
-}
-
-.service__link-symbol {
-  color: var(--peach);
-  margin-left: 0.5rem;
-}
-
-.service--web {
-  background-image: url("../../assets/home/mobile/image-web-design.jpg");
-}
-
-.service--app {
-  background-image: url("../../assets/home/mobile/image-app-design.jpg");
-}
-
-.service--graphic {
-  background-image: url("../../assets/home/mobile/image-graphic-design.jpg");
-}
-
-@media (min-width: 32em) {
-  .service--web {
-    background-image: url("../../assets/home/tablet/image-web-design.jpg");
-  }
-
-  .service--app {
-    background-image: url("../../assets/home/tablet/image-app-design.jpg");
-  }
-
-  .service--graphic {
-    background-image: url("../../assets/home/tablet/image-graphic-design.jpg");
-  }
-}
-
 @media (min-width: 48em) {
-  .service {
-    min-height: 20rem;
+  .service__container {
+    grid-template-areas:
+      "first second"
+      "first third";
   }
 
-  .service--web {
-    background-image: url("../../assets/home/desktop/image-web-design-large.jpg");
-    grid-row: span 2;
+  .service__container .service:nth-child(1) {
+    grid-area: first;
   }
 
-  .service--app {
-    background-image: url("../../assets/home/desktop/image-app-design.jpg");
+  .service__container .service:nth-child(2) {
+    grid-area: second;
   }
 
-  .service--graphic {
-    background-image: url("../../assets/home/desktop/image-graphic-design.jpg");
-  }
-}
-
-/* Features Section */
-.feature {
-  gap: 1.25rem;
-}
-
-.feature__image-wrapper {
-  position: relative;
-}
-
-.feature__image-wrapper::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
-  inset: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.feature__image {
-  margin: 0 auto;
-}
-
-@media (min-width: 32em) {
-  .feature {
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-  }
-}
-
-@media (min-width: 48em) {
-  .feature {
-    flex-direction: column;
-    grid-template-columns: 1fr;
+  .service__container .service:nth-child(3) {
+    grid-area: third;
   }
 }
