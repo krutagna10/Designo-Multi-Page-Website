@@ -1,0 +1,112 @@
+.location-section > * + * {
+  margin-top: 1.25rem;
+}
+
+.location {
+  gap: 0 !important;
+  padding-inline: 0 !important;
+}
+
+.location__text-content {
+  padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.location__contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.location__image-wrapper {
+  min-height: 20rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.location--canada .location__image-wrapper {
+  background-image: url("../../assets/locations/desktop/image-map-canada.png");
+  grid-row-start: 1;
+}
+
+.location--australia .location__image-wrapper {
+  background-image: url("../../assets/locations/desktop/image-map-australia.png");
+}
+
+.location--uk .location__image-wrapper {
+  background-image: url("../../assets/locations/desktop/image-map-united-kingdom.png");
+  grid-row-start: 1;
+}
+
+.location__contact-link {
+  display: block;
+}
+
+@media (min-width: 32em) {
+  .location {
+    gap: 1.25rem !important;
+  }
+
+  .location__heading {
+    grid-column: span 2;
+  }
+
+  .location__text-content {
+    text-align: left;
+    border-radius: 0.75rem;
+    padding-inline: 2rem;
+  }
+
+  .location__contact-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .location--canada .location__image-wrapper {
+    background-image: url("../../assets/locations/tablet/image-map-canada.png");
+    grid-row-start: 1;
+  }
+
+  .location--australia .location__image-wrapper {
+    background-image: url("../../assets/locations/tablet/image-map-australia.png");
+  }
+
+  .location--uk .location__image-wrapper {
+    background-image: url("../../assets/locations/tablet/image-map-uk.png");
+    grid-row-start: 1;
+  }
+}
+
+@media (min-width: 48em) {
+  .location--canada,
+  .location--uk {
+    grid-template-columns: 70fr 30fr;
+  }
+
+  .location--australia {
+    grid-template-columns: 30fr 70fr;
+  }
+
+  .location__image-wrapper {
+    border-radius: 0.75rem;
+  }
+
+  .location--canada .location__image-wrapper,
+  .location--uk .location__image-wrapper {
+    grid-column-start: 2;
+  }
+}
+
+@media (min-width: 64em) {
+  .location__text-content {
+    text-align: left;
+    border-radius: 0.75rem;
+    padding-inline: 4rem;
+  }
+}

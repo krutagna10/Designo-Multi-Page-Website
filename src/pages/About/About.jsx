@@ -1,4 +1,7 @@
 import Layout from "../../layout/Layout.jsx";
+import LocationsCard from "../../components/LocationsCard/LocationsCard.jsx";
+import CallToAction from "../../components/CallToAction/CallToAction.jsx";
+import "./About.css";
 
 function About() {
   return (
@@ -43,6 +46,30 @@ function About() {
           </div>
         </div>
       </section>
+      <LocationsCard />
+      <section className="deal-section section-padding section-padding-inline">
+        <div className="container about about--deal grid background-very-light-peach">
+          <div className="about__image-wrapper about__image-wrapper--deal"></div>
+          <div className="about__text-content hero-flow">
+            <h1 className="about__heading secondary-heading text-peach">
+              The real deal
+            </h1>
+            <p className="about__text font-size-100 text-dark-grey">
+              As strategic partners in our clients’ businesses, we are ready to
+              take on any challenge as our own. Solving real problems require
+              empathy and collaboration, and we strive to bring a fresh
+              perspective to every opportunity. We make design and technology
+              more accessible and give you tools to measure success.
+            </p>
+            <p className="about__text font-size-100 text-dark-grey">
+              We are visual storytellers in appealing and captivating ways. By
+              combining business and marketing strategies, we inspire audiences
+              to take action and drive real results.
+            </p>
+          </div>
+        </div>
+      </section>
+      <CallToAction />
     </Layout>
   );
 }
