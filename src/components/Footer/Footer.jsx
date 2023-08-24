@@ -48,9 +48,13 @@ const FOOTER_SOCIAL_LINKS = [
   },
 ];
 
-function Footer() {
+function Footer({ className }) {
   return (
-    <footer className="footer-section section-padding background-black">
+    <footer
+      className={`footer-section section-padding background-black ${
+        className ? className : ""
+      }`}
+    >
       <div className="footer container">
         <a className="footer__logo-link flex flex--center" href="#">
           <img src={logoLight} className="footer__logo" alt="Designo" />

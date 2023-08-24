@@ -1,5 +1,5 @@
-import "./CallToAction.css";
 import { Link } from "react-router-dom";
+import "./CallToAction.css";
 
 function CallToAction() {
   return (

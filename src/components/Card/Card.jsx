@@ -1,9 +1,10 @@
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 function Card({ title, description, image, alt }) {
   return (
     <div className="card background-very-light-peach">
-      <a className="card__link" href="#">
+      <Link className="card__link" to="#">
         <span className="card__image-wrapper">
           <img src={image} className="card__image" alt={alt} />
         </span>
@@ -15,7 +16,7 @@ function Card({ title, description, image, alt }) {
             {description}
           </span>
         </span>
-      </a>
+      </Link>
     </div>
   );
 }
