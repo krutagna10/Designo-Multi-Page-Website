@@ -2,6 +2,21 @@ import { Link } from "react-router-dom";
 import logoDark from "../../assets/shared/desktop/logo-dark.png";
 import "./Header.css";
 
+const HEADER_LINKS = [
+  {
+    to: "/about",
+    text: "Our Content",
+  },
+  {
+    to: "/locations",
+    text: "Locations",
+  },
+  {
+    to: "/contact",
+    text: "Contact",
+  },
+];
+
 function Header() {
   return (
     <div>
@@ -17,21 +32,13 @@ function Header() {
               className="header__nav-list flex"
               data-visible="false"
             >
-              <li>
-                <Link to="/about" className="header__nav-link">
-                  Our Content
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations" className="header__nav-link">
-                  Locations
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="header__nav-link">
-                  Contact
-                </Link>
-              </li>
+              {HEADER_LINKS.map((link, index) => (
+                <li key={index}>
+                  <Link to={link.to} className="header__nav-link">
+                    {link.text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
 

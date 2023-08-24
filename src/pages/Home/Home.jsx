@@ -1,10 +1,8 @@
-import Layout from "../../layout/Layout.jsx";
 import { Link } from "react-router-dom";
+import Layout from "../../layout/Layout.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import heroPhoneImage from "../../assets/home/desktop/image-hero-phone.png";
-import illustrationPassionate from "../../assets/home/desktop/illustration-passionate.svg";
-import illustrationResourceFul from "../../assets/home/desktop/illustration-resourceful.svg";
-import illustrationFriendly from "../../assets/home/desktop/illustration-friendly.svg";
+import Features from "../../components/Features/Features.jsx";
 import "./Home.css";
 
 function Home() {
@@ -76,71 +74,7 @@ function Home() {
           </Link>
         </div>
       </section>
-      <section className="features-section section-padding">
-        <div className="container grid grid--3-columns">
-          <div className="feature grid">
-            <div className="feature__image-wrapper">
-              <img
-                src={illustrationPassionate}
-                className="feature__image"
-                alt=""
-                aria-hidden="true"
-              />
-            </div>
-            <div className="feature__text-content flow text-align-center">
-              <h2 className="feature__heading tertiary-heading font-size-200 uppercase letter-spacing-2">
-                Passionate
-              </h2>
-              <p className="feature__text">
-                Each project starts with an in-depth brand research to ensure we
-                only create products that serve a purpose. We merge art, design,
-                and technology into exciting new solutions
-              </p>
-            </div>
-          </div>
-          <div className="feature grid">
-            <div className="feature__image-wrapper">
-              <img
-                src={illustrationResourceFul}
-                className="feature__image"
-                alt=""
-                aria-hidden="true"
-              />
-            </div>
-            <div className="feature__text-content flow text-align-center">
-              <h2 className="feature__heading tertiary-heading font-size-200 uppercase letter-spacing-2">
-                Resourceful
-              </h2>
-              <p className="feature__text">
-                Everything that we do has a strategic purpose. We use an agile
-                approach in all of our projects and value customer
-                collaboration. It guarantees superior results that fulfill our
-                clients’ needs.
-              </p>
-            </div>
-          </div>
-          <div className="feature grid">
-            <div className="feature__image-wrapper">
-              <img
-                src={illustrationFriendly}
-                className="feature__image"
-                alt=""
-                aria-hidden="true"
-              />
-            </div>
-            <div className="feature__text-content flow text-align-center">
-              <h2 className="feature__heading tertiary-heading font-size-200 uppercase letter-spacing-2">
-                Friendly
-              </h2>
-              <p className="feature__text font-size-100">
-                We are a group of enthusiastic folks who know how to put people
-                first. Our success depends on our customers, and we strive to
-                give them the best experience a company can provide.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Features />
       <CallToAction />
     </Layout>
   );

@@ -10,6 +10,44 @@ import {
   logoYoutube,
 } from "ionicons/icons";
 
+const FOOTER_LINKS = [
+  {
+    to: "/about",
+    text: "Our Content",
+  },
+  {
+    to: "/locations",
+    text: "Locations",
+  },
+  {
+    to: "/contact",
+    text: "Contact",
+  },
+];
+
+const FOOTER_SOCIAL_LINKS = [
+  {
+    href: "https://www.facebook.com/",
+    logo: logoFacebook,
+  },
+  {
+    href: "https://www.youtube.com/",
+    logo: logoYoutube,
+  },
+  {
+    href: "https://twitter.com/",
+    logo: logoTwitter,
+  },
+  {
+    href: "https://in.pinterest.com/",
+    logo: logoPinterest,
+  },
+  {
+    href: "https://www.instagram.com/",
+    logo: logoInstagram,
+  },
+];
+
 function Footer() {
   return (
     <footer className="footer-section section-padding background-black">
@@ -19,21 +57,13 @@ function Footer() {
         </a>
         <nav className="footer__nav" aria-label="secondary navigation">
           <ul className="footer__nav-list flex flex--column flex--gap">
-            <li>
-              <Link className="footer__nav-link" to="/about">
-                Our company
-              </Link>
-            </li>
-            <li>
-              <Link className="footer__nav-link" to="/locations">
-                Locations
-              </Link>
-            </li>
-            <li>
-              <Link className="footer__nav-link" to="/contact">
-                Contact
-              </Link>
-            </li>
+            {FOOTER_LINKS.map((link, index) => (
+              <li key={index}>
+                <Link className="footer__nav-link" to={link.to}>
+                  {link.text}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="footer__address-wrapper text-grey">
@@ -48,38 +78,20 @@ function Footer() {
           <a className="footer__contact-link" href="tel: +1 253-863-8967">
             P : +1 253-863-8967
           </a>
-          <a className="footer__contact-link" href="contact@designo.co">
+          <a className="footer__contact-link" href="mailto:contact@designo.co">
             M : contact@designo.co
           </a>
         </div>
         <div className="footer__social-logos-wrapper flex flex--gap">
-          <a
-            className="footer__social-logo-link"
-            href="https://www.facebook.com/"
-          >
-            <IonIcon className="footer__social-logo" icon={logoFacebook} />
-          </a>
-          <a
-            className="footer__social-logo-link"
-            href="https://www.youtube.com/"
-          >
-            <IonIcon className="footer__social-logo" icon={logoYoutube} />
-          </a>
-          <a className="footer__social-logo-link" href="https://twitter.com/">
-            <IonIcon className="footer__social-logo" icon={logoTwitter} />
-          </a>
-          <a
-            className="footer__social-logo-link"
-            href="https://in.pinterest.com/"
-          >
-            <IonIcon className="footer__social-logo" icon={logoPinterest} />
-          </a>
-          <a
-            className="footer__social-logo-link"
-            href="https://www.instagram.com/"
-          >
-            <IonIcon className="footer__social-logo" icon={logoInstagram} />
-          </a>
+          {FOOTER_SOCIAL_LINKS.map((socialLink, index) => (
+            <a
+              key={index}
+              className="footer__social-logo-link"
+              href={socialLink.href}
+            >
+              <IonIcon className="footer__social-logo" icon={socialLink.logo} />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
