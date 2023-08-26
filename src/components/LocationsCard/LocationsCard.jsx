@@ -27,7 +27,7 @@ function LocationsCard() {
           {locations.map((location, index) => (
             <div
               key={index}
-              className="locations__item flex flex--column flex--align-center"
+              className="locations__item flex flex-col items-center"
             >
               <div className="locations__image-wrapper">
                 <img
@@ -37,7 +37,7 @@ function LocationsCard() {
                   aria-hidden="true"
                 />
               </div>
-              <div className="locations__text-content grid grid--items-center text-align-center">
+              <div className="locations__text-content grid place-content-center text-align-center">
                 <h3 className="locations__heading tertiary-heading text-dark-grey uppercase letter-spacing-2">
                   {location.title}
                 </h3>

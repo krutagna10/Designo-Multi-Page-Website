@@ -27,7 +27,7 @@ const features = [
 function Features() {
   return (
     <section className="features-section section-padding">
-      <div className="container grid grid--3-columns">
+      <div className="container grid grid-cols-3">
         {features.map((feature, index) => (
           <div key={index} className="feature grid">
             <div className="feature__image-wrapper">
@@ -39,7 +39,7 @@ function Features() {
               />
             </div>
             <div className="feature__text-content flow text-align-center">
-              <h2 className="feature__heading tertiary-heading font-size-200 uppercase letter-spacing-2">
+              <h2 className="feature__heading tertiary-heading fs-200 uppercase letter-spacing-2">
                 {feature.title}
               </h2>
               <p className="feature__text">{feature.description}</p>

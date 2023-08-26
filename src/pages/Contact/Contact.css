@@ -13,14 +13,14 @@
   display: block;
   background: transparent;
   border: none;
-  color: var(--white);
+  color: var(--clr-white);
   padding: 1rem 0.75rem 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--clr-white);
   width: 100%;
 }
 .contact__form-input:focus {
   outline: none;
-  border-bottom: 2px solid var(--white);
+  border-bottom: 2px solid var(--clr-white);
 }
 .contact__error-wrapper {
   position: absolute;
@@ -64,7 +64,7 @@ textarea {
 }
 
 ::placeholder {
-  color: var(--white);
+  color: var(--clr-white);
   opacity: 0.5;
 }
 
@@ -83,5 +83,5 @@ input:-webkit-autofill {
 }
 
 input:-webkit-autofill {
-  -webkit-text-fill-color: var(--white) !important;
+  -webkit-text-fill-color: var(--clr-white) !important;
 }

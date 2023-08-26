@@ -75,14 +75,14 @@ function WebDesign() {
         description="We build websites that serve as powerful marketing tools and bring memorable brand experiences"
       />
       <section className="cards-section section-padding">
-        <div className="container grid grid--3-columns">
+        <div className="container grid grid-cols-3">
           {CARDS.map((card, index) => (
             <Card key={index} {...card} />
           ))}
         </div>
       </section>
       <section className="services__section section-padding">
-        <div className="container grid grid--2-columns">
+        <div className="container grid grid-cols-2">
           {services.map((service, index) => (
             <Service
               key={index}

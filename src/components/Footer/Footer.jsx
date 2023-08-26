@@ -51,16 +51,19 @@ const FOOTER_SOCIAL_LINKS = [
 function Footer({ className }) {
   return (
     <footer
-      className={`footer-section section-padding background-black ${
+      className={`footer-section section-padding bg-black ${
         className ? className : ""
       }`}
     >
       <div className="footer container">
-        <a className="footer__logo-link flex flex--center" href="#">
+        <a
+          className="footer__logo-link flex justify-center items-center"
+          href="#"
+        >
           <img src={logoLight} className="footer__logo" alt="Designo" />
         </a>
         <nav className="footer__nav" aria-label="secondary navigation">
-          <ul className="footer__nav-list flex flex--column flex--gap">
+          <ul className="footer__nav-list flex flex-col gap">
             {FOOTER_LINKS.map((link, index) => (
               <li key={index}>
                 <Link className="footer__nav-link" to={link.to}>
@@ -86,7 +89,7 @@ function Footer({ className }) {
             M : contact@designo.co
           </a>
         </div>
-        <div className="footer__social-logos-wrapper flex flex--gap">
+        <div className="footer__social-logos-wrapper flex gap">
           {FOOTER_SOCIAL_LINKS.map((socialLink, index) => (
             <a
               key={index}

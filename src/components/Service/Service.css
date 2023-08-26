@@ -8,7 +8,7 @@
   cursor: pointer;
   overflow: hidden;
   text-align: center;
-  color: var(--white);
+  color: var(--clr-white);
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -17,12 +17,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: hsl(var(--raw-black), 0.45);
+  background-color: hsl(270, 3%, 11%, 0.45);
   transition: all 0.4s ease;
 }
 
 .service:hover::before {
-  background-color: hsl(var(--raw-peach), 0.5);
+  background-color: hsl(1, 73%, 66%, 0.5);
 }
 
 .service__heading,
@@ -32,7 +32,7 @@
 }
 
 .service__link-symbol {
-  color: var(--peach);
+  color: var(--clr-peach);
   margin-left: 0.5rem;
 }
 

@@ -9,12 +9,12 @@ function Contact() {
     <>
       <Header />
       <section className="contact-section hero-padding section-padding-inline">
-        <div className="contact container grid grid--2-columns background-peach">
-          <div className="contact__text-content flow flex flex--column flex--justify-center">
+        <div className="contact container grid grid-cols-2 bg-peach">
+          <div className="contact__text-content flow flex flex-col justify-center">
             <h1 className="contact__heading primary-heading text-white">
               Contact us
             </h1>
-            <p className="contact__text font-size-100 text-white">
+            <p className="contact__text fs-100 text-white">
               Ready to take it to the next level? Let’s talk about your project
               or idea and find out how we can help your business grow. If you
               are looking for unique digital experiences that’s relatable to
@@ -35,7 +35,7 @@ function Contact() {
                     placeholder="Name"
                   />
                 </label>
-                <div className="contact__error-wrapper flex flex--gap">
+                <div className="contact__error-wrapper flex gap">
                   <p className="contact__error-message text-white">
                     Name cannot be empty
                   </p>
@@ -58,7 +58,7 @@ function Contact() {
                     placeholder="Email Address"
                   />
                 </label>
-                <div className="contact__error-wrapper flex flex--gap">
+                <div className="contact__error-wrapper flex gap">
                   <p className="contact__error-message text-white">
                     Enter a valid email
                   </p>
@@ -81,7 +81,7 @@ function Contact() {
                     placeholder="Phone Number"
                   />
                 </label>
-                <div className="contact__error-wrapper flex flex--gap">
+                <div className="contact__error-wrapper flex gap">
                   <p className="contact__error-message contact__error-message--phone text-white">
                     Phone number cannot be empty
                   </p>
@@ -105,7 +105,7 @@ function Contact() {
                     placeholder="Your Message"
                   />
                 </label>
-                <div className="contact__error-wrapper flex flex--gap">
+                <div className="contact__error-wrapper flex gap">
                   <p className="contact__error-message text-white">
                     Message cannot be empty
                   </p>

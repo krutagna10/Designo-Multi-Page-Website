@@ -66,14 +66,14 @@ function AppDesign() {
         description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips"
       />
       <section className="cards-section section-padding">
-        <div className="container grid grid--3-columns">
+        <div className="container grid grid-cols-3">
           {CARDS.map((card, index) => (
             <Card key={index} {...card} />
           ))}
         </div>
       </section>
       <section className="services__section section-padding">
-        <div className="container grid grid--2-columns">
+        <div className="container grid grid-cols-2">
           {services.map((service, index) => (
             <Service
               key={index}

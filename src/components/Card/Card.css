@@ -19,7 +19,7 @@
 }
 
 .card:hover {
-  background-color: var(--peach) !important;
+  background-color: var(--clr-peach) !important;
 }
 
 .card:hover .card__image {
@@ -27,11 +27,11 @@
 }
 
 .card:hover .card__heading {
-  color: var(--white);
+  color: var(--clr-white);
 }
 
 .card:hover .card__text {
-  color: var(--white);
+  color: var(--clr-white);
 }
 
 .card__image {
