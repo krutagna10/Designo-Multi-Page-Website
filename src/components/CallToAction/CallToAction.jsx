@@ -6,7 +6,7 @@ function CallToAction() {
     <section className="call-to-action-section">
       <div className="call-to-action container bg-peach grid">
         <div className="call-to-action__text-content flow">
-          <h2 className="call-to-action__heading secondary-heading text-white">
+          <h2 className="call-to-action__heading secondary-title text-white">
             Let’s talk about your project
           </h2>
           <p className="call-to-action__description fs-100 text-white">

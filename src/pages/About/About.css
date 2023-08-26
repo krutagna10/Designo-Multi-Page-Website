@@ -1,7 +1,7 @@
 .about {
   padding-inline: 0 !important;
   gap: 0 !important;
-  border-radius: var(--border-radius-1);
+  border-radius: var(--border-radius-100);
   overflow: hidden;
 }
 .about__text-content {

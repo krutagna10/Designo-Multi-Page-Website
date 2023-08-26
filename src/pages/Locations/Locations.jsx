@@ -1,14 +1,15 @@
 import Layout from "../../layout/Layout.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import "./Locations.css";
+import Section from "../../components/UI/Section/Section.jsx";
 
 function Locations() {
   return (
     <Layout>
-      <section className="location-section hero-padding section-padding-inline">
+      <Section className="location-section hero-section">
         <div className="location location--canada container grid">
           <div className="location__text-content bg-very-light-peach flow flex flex-col justify-center">
-            <h2 className="location__heading secondary-heading text-peach">
+            <h2 className="location__heading secondary-title text-peach">
               Canada
             </h2>
             <div className="location__contact-wrapper grid">
@@ -28,7 +29,10 @@ function Locations() {
                 >
                   P : +1 253-863-8967
                 </a>
-                <a className="location__contact-link" href="contact@designo.co">
+                <a
+                  className="location__contact-link"
+                  href="mailto:contact@designo.co"
+                >
                   M : contact@designo.co
                 </a>
               </div>
@@ -40,7 +44,7 @@ function Locations() {
         <div className="location location--australia container grid">
           <div className="location__image-wrapper"></div>
           <div className="location__text-content bg-very-light-peach flow flex flex-col justify-center">
-            <h2 className="location__heading secondary-heading text-peach">
+            <h2 className="location__heading secondary-title text-peach">
               Australia
             </h2>
             <div className="location__contact-wrapper grid">
@@ -57,7 +61,10 @@ function Locations() {
                 <a className="location__contact-link" href="tel:(02) 6720 9092">
                   P : (02) 6720 9092
                 </a>
-                <a className="location__contact-link" href="contact@designo.au">
+                <a
+                  className="location__contact-link"
+                  href="mailto:contact@designo.au"
+                >
                   M : contact@designo.au
                 </a>
               </div>
@@ -67,7 +74,7 @@ function Locations() {
 
         <div className="location location--uk container grid">
           <div className="location__text-content bg-very-light-peach flow flex flex-col justify-center">
-            <h2 className="location__heading secondary-heading text-peach">
+            <h2 className="location__heading secondary-title text-peach">
               United Kingdom
             </h2>
             <div className="location__contact-wrapper grid">
@@ -88,14 +95,14 @@ function Locations() {
                   Contact{" "}
                 </p>
                 <a
-                  className="location__contact-link fs-100 text-dark-grey text-decoration-none"
+                  className="location__contact-link fs-100 text-dark-grey"
                   href="tel: 078 3115 1400"
                 >
                   P : 078 3115 1400
                 </a>
                 <a
-                  className="location__contact-link fs-100 text-dark-grey text-decoration-none"
-                  href="contact@designo.uk"
+                  className="location__contact-link fs-100 text-dark-grey"
+                  href="mailto: contact@designo.uk"
                 >
                   M : contact@designo.uk
                 </a>
@@ -104,7 +111,7 @@ function Locations() {
           </div>
           <div className="location__image-wrapper"></div>
         </div>
-      </section>
+      </Section>
       <CallToAction />
     </Layout>
   );

@@ -8,11 +8,11 @@ function Card({ title, description, image, alt }) {
         <span className="card__image-wrapper">
           <img src={image} className="card__image" alt={alt} />
         </span>
-        <span className="card__text-content text-align-center flow">
-          <span className="card__heading tertiary-heading uppercase letter-spacing-2 text-peach">
+        <span className="card__content text-center flow">
+          <span className="card__title tertiary-title uppercase letter-spacing-2 text-peach">
             {title}
           </span>
-          <span className="card__text text-dark-grey fs-100">
+          <span className="card__description text-dark-grey fs-100">
             {description}
           </span>
         </span>

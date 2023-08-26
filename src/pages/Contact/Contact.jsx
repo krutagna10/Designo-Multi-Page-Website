@@ -3,15 +3,16 @@ import LocationsCard from "../../components/LocationsCard/LocationsCard.jsx";
 import "./Contact.css";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import Section from "../../components/UI/Section/Section.jsx";
 
 function Contact() {
   return (
     <>
       <Header />
-      <section className="contact-section hero-padding section-padding-inline">
+      <Section className="contact-section hero-section">
         <div className="contact container grid grid-cols-2 bg-peach">
           <div className="contact__text-content flow flex flex-col justify-center">
-            <h1 className="contact__heading primary-heading text-white">
+            <h1 className="contact__heading primary-title text-white">
               Contact us
             </h1>
             <p className="contact__text fs-100 text-white">
@@ -123,7 +124,7 @@ function Contact() {
             </form>
           </div>
         </div>
-      </section>
+      </Section>
       <LocationsCard />
       <Footer className="footer-section--contact" />
     </>

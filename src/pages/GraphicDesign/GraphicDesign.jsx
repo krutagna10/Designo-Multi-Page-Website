@@ -1,5 +1,5 @@
 import Layout from "../../layout/Layout.jsx";
-import HeroDesign from "../../components/HeroDesign/HeroDesign.jsx";
+import DesignHero from "../../components/DesignHero/DesignHero.jsx";
 import Card from "../../components/Card/Card.jsx";
 import Service from "../../components/Service/Service.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
@@ -44,7 +44,7 @@ const services = [
 function GraphicDesign() {
   return (
     <Layout>
-      <HeroDesign
+      <DesignHero
         title="Graphic design"
         description="We deliver eye-catching branding materials that are tailored to meet your business objectives"
       />

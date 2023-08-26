@@ -1,81 +1,73 @@
-.header-section {
-  padding-block: var(--spacing-400);
+.header {
+  padding-block: var(--spacing-300);
   position: relative;
   z-index: 99;
 }
 
-.header__logo-link {
+.header__link {
   max-width: 10rem;
 }
 
-.header__nav-list {
-  position: absolute;
-  background-color: var(--clr-black);
-  flex-direction: column;
-  height: 45vh;
-  top: 100%;
-  left: 0;
-  right: 0;
-  padding-left: 1.5rem;
-  transition: all 0.4s ease;
-  z-index: 99;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: translateX(100%);
-}
-
-.header__nav-list[data-visible="true"] {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-  transform: translateX(0);
-}
-
 .header__nav-link {
-  text-transform: uppercase;
   letter-spacing: var(--letter-spacing-100);
-  color: var(--clr-white);
   transition: all 0.3s ease;
-  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
 }
 
-.header__mobile-nav-toggle {
-  display: block;
-  border: none;
-  width: 2rem;
-  height: 1.5rem;
-  background: transparent url("../../assets/shared/mobile/icon-hamburger.svg")
-    no-repeat center;
-  cursor: pointer;
-  z-index: 999;
-}
+@media (max-width: 47.99em) {
+  .header__nav-list {
+    background-color: var(--clr-black);
+    padding-left: 1.5rem;
+    position: absolute;
+    height: 45vh;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
 
-.header__mobile-nav-toggle[aria-expanded="true"] {
-  background-image: url("../../assets/shared/mobile/icon-close.svg");
+    /* Hiding navigation  */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+
+  .header__nav-list[data-visible="true"] {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .header__nav-link {
+    color: var(--clr-white);
+  }
+
+  .header__mobile-nav-toggle {
+    display: block;
+    width: 2rem;
+    height: 1.5rem;
+    border: none;
+    background: transparent url("../../assets/shared/mobile/icon-hamburger.svg")
+      no-repeat center;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .header__mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("../../assets/shared/mobile/icon-close.svg");
+  }
 }
 
 @media (min-width: 48em) {
-  .header__nav-list {
-    background-color: var(--clr-white);
-    position: static;
-    height: 100%;
-    padding-left: 0;
-    flex-direction: row;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(0);
-  }
-
   .header__nav-link {
     color: hsl(270, 3%, 11%, 0.8);
   }
 
   .header__nav-link:hover {
     color: var(--clr-black);
-    border-color: var(--clr-black);
+    border-bottom: 1px solid var(--clr-black);
   }
 
   .header__mobile-nav-toggle {

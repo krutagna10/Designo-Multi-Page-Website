@@ -1,7 +1,7 @@
 .hero {
   overflow: hidden;
   gap: 3rem !important;
-  border-radius: var(--border-radius-1);
+  border-radius: var(--border-radius-100);
   position: relative;
   padding-top: 3rem;
   background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");

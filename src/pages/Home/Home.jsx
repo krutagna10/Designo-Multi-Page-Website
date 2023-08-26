@@ -6,6 +6,7 @@ import Features from "../../components/Features/Features.jsx";
 import "./Home.css";
 import Service from "../../components/Service/Service.jsx";
 import Container from "../../components/UI/Container/Container.jsx";
+import Section from "../../components/UI/Section/Section.jsx";
 
 const services = [
   {
@@ -28,10 +29,10 @@ const services = [
 function Home() {
   return (
     <Layout>
-      <section className="hero-section hero-padding section-padding-inline">
+      <Section className="hero-section">
         <Container className="hero grid bg-peach">
           <div className="hero__description hero-flow">
-            <h1 className="hero__heading primary-heading text-white">
+            <h1 className="hero__heading primary-title text-white">
               Award-winning custom designs and digital branding solutions
             </h1>
             <p className="hero__text fs-100 text-white">
@@ -51,9 +52,9 @@ function Home() {
             />
           </div>
         </Container>
-      </section>
-      <section className="services__section section-padding">
-        <div className="container service__container grid grid-cols-2">
+      </Section>
+      <Section>
+        <Container className="service__container grid gap grid-cols-2">
           {services.map((service, index) => (
             <Service
               key={index}
@@ -62,8 +63,8 @@ function Home() {
               className={service.className}
             />
           ))}
-        </div>
-      </section>
+        </Container>
+      </Section>
       <Features />
       <CallToAction />
     </Layout>

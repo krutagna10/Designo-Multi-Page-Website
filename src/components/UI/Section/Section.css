@@ -1,0 +1,7 @@
+.section {
+  padding-block: var(--spacing-500);
+}
+
+.hero-section {
+  padding-block-start: 0 !important;
+}

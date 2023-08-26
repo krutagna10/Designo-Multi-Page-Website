@@ -33,32 +33,19 @@
   --spacing-400: clamp(2rem, calc(1.65rem + 1.74vw), 3rem);
   --spacing-500: clamp(3rem, calc(2.3rem + 3.48vw), 5rem);
 
-  --gap: 1rem;
-  --flow-space: 1.25rem;
   --section-padding: clamp(3.75rem, 10vw, 5rem);
-  --hero-padding: 3.75rem;
 
   /* Border Radius*/
-  --border-radius-1: 0;
+  --border-radius-100: 0.75rem;
 
   /* Letter spacing*/
   --letter-spacing-200: 0.3125em;
   --letter-spacing-100: 0.125em;
 }
 
-@media (min-width: 36em) {
-  :root {
-    --border-radius-1: 0.75rem;
-    --section-padding-inline: 1rem;
-  }
-}
-
 @media (min-width: 48em) {
   :root {
     --fs-300: 0.875rem;
-
-    /* Spacing */
-    --hero-padding: 5rem;
   }
 }
 
@@ -145,15 +132,7 @@ body {
 }
 
 .section-padding {
-  padding: var(--section-padding) 0;
-}
-
-.section-padding-inline {
-  padding-inline: var(--section-padding-inline);
-}
-
-.hero-padding {
-  padding-bottom: var(--hero-padding);
+  padding-block: var(--section-padding);
 }
 
 .flow > * + * {
@@ -164,15 +143,15 @@ body {
   margin-top: 1.75rem;
 }
 
-.primary-heading {
+.primary-title {
   font-size: var(--fs-500);
 }
 
-.secondary-heading {
+.secondary-title {
   font-size: var(--fs-400);
 }
 
-.tertiary-heading {
+.tertiary-title {
   font-size: var(--fs-200);
 }
 
@@ -180,11 +159,7 @@ body {
   text-transform: uppercase;
 }
 
-.text-decoration-none {
-  text-decoration: none;
-}
-
-.text-align-center {
+.text-center {
   text-align: center;
 }
 
@@ -301,7 +276,6 @@ body {
 
 .btn {
   font-size: var(--fs-100);
-  text-decoration: none;
   display: block;
   border: none;
   padding: 0.75rem 1.5rem;

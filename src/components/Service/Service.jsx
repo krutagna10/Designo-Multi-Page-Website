@@ -7,7 +7,7 @@ function Service({ className, title, to }) {
       to={to}
       className={`service grid place-items-center gap ${className}`}
     >
-      <span className="service__heading secondary-heading letter-spacing-1">
+      <span className="service__heading secondary-title letter-spacing-1">
         {title}
       </span>
       <span className="service__text fs-100 letter-spacing-2">

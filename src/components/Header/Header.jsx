@@ -27,10 +27,10 @@ function Header() {
   }
 
   return (
-    <header className="header-section bg-white">
-      <Container className="header flex justify-between items-center">
-        <Link to="/" className="header__logo-link">
-          <img src={logoDark} className="header__logo" alt="Designo" />
+    <header className="header bg-white">
+      <Container className="flex justify-between items-center">
+        <Link to="/" className="header__link">
+          <img className="header__logo" src={logoDark} alt="Designo" />
         </Link>
 
         <nav className="header__nav" aria-label="primary navigation">

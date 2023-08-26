@@ -22,7 +22,7 @@ const locations = [
 function LocationsCard() {
   return (
     <>
-      <section className="locations-section section-padding section-padding-inline">
+      <section className="locations-section section-padding">
         <div className="container locations grid">
           {locations.map((location, index) => (
             <div
@@ -37,8 +37,8 @@ function LocationsCard() {
                   aria-hidden="true"
                 />
               </div>
-              <div className="locations__text-content grid place-content-center text-align-center">
-                <h3 className="locations__heading tertiary-heading text-dark-grey uppercase letter-spacing-2">
+              <div className="locations__text-content grid place-content-center text-center">
+                <h3 className="locations__heading tertiary-title text-dark-grey uppercase letter-spacing-2">
                   {location.title}
                 </h3>
                 <Link to="/locations" className="btn btn--dark locations__btn">

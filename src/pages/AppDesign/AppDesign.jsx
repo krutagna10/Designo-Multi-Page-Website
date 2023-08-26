@@ -1,5 +1,5 @@
 import Layout from "../../layout/Layout.jsx";
-import HeroDesign from "../../components/HeroDesign/HeroDesign.jsx";
+import DesignHero from "../../components/DesignHero/DesignHero.jsx";
 import Card from "../../components/Card/Card.jsx";
 import Service from "../../components/Service/Service.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
@@ -61,7 +61,7 @@ const services = [
 function AppDesign() {
   return (
     <Layout>
-      <HeroDesign
+      <DesignHero
         title="App design"
         description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips"
       />

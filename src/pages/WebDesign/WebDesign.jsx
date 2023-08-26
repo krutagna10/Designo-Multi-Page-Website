@@ -1,5 +1,5 @@
 import Layout from "../../layout/Layout.jsx";
-import HeroDesign from "../../components/HeroDesign/HeroDesign.jsx";
+import DesignHero from "../../components/DesignHero/DesignHero.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import Card from "../../components/Card/Card.jsx";
 import expressImage from "../../assets/web-design/desktop/image-express.jpg";
@@ -70,7 +70,7 @@ const services = [
 function WebDesign() {
   return (
     <Layout>
-      <HeroDesign
+      <DesignHero
         title="Web design"
         description="We build websites that serve as powerful marketing tools and bring memorable brand experiences"
       />

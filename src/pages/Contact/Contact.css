@@ -1,7 +1,7 @@
 .contact {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  border-radius: var(--border-radius-1);
+  border-radius: var(--border-radius-100);
 }
 .contact__text-content {
   text-align: center;

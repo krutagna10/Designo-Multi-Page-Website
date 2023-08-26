@@ -32,7 +32,6 @@
 
 .footer__nav-link {
   color: var(--clr-white);
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-100);
   font-size: 0.875rem;
@@ -45,7 +44,6 @@
 
 .footer__contact-link {
   display: block;
-  text-decoration: none;
   color: inherit;
 }
 

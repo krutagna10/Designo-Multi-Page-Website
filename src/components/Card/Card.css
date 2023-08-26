@@ -14,7 +14,6 @@
 }
 
 .card__link {
-  text-decoration: none;
   display: block;
 }
 
@@ -26,11 +25,11 @@
   transform: scale(1.03);
 }
 
-.card:hover .card__heading {
+.card:hover .card__title {
   color: var(--clr-white);
 }
 
-.card:hover .card__text {
+.card:hover .card__description {
   color: var(--clr-white);
 }
 
@@ -38,7 +37,7 @@
   transition: all 0.4s ease;
 }
 
-.card__text-content {
+.card__content {
   padding: 2.125rem;
 }
 
