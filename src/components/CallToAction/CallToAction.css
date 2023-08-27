@@ -1,31 +1,51 @@
-.call-to-action {
-  padding: 4rem clamp(1rem, 3vh, 5rem);
+.cta-section {
+  position: relative;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0 0;
+  background-color: var(--clr-black);
+  z-index: -1;
+}
+
+.cta-wrapper {
+  margin-inline: 1rem;
+}
+
+.cta {
+  padding: var(--spacing-400) !important;
   border-radius: 0.75rem;
   background-image: url("../../assets/shared/desktop/bg-pattern-call-to-action.svg");
   background-position: center right;
   background-repeat: no-repeat;
 }
 
-.call-to-action__text-content {
-  text-align: center;
+@media (max-width: 31.99em) {
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta__content {
+    text-align: center;
+  }
+}
+
+.cta__content {
   place-items: center;
 }
 
-.call-to-action__btn {
+.cta__btn {
   place-self: center;
 }
 
 @media (min-width: 32em) {
-  .call-to-action {
-    padding-inline: 3rem;
+  .cta {
     grid-template-columns: 1fr 1fr;
   }
 
-  .call-to-action__text-content {
-    text-align: left;
-  }
-
-  .call-to-action__btn {
+  .cta__btn {
     margin-left: auto;
   }
 }

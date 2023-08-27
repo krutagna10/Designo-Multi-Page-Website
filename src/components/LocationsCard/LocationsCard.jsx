@@ -38,10 +38,13 @@ function LocationsCard() {
                 />
               </div>
               <div className="locations__text-content grid place-content-center text-center">
-                <h3 className="locations__heading tertiary-title text-dark-grey uppercase letter-spacing-2">
+                <h3 className="locations__heading tertiary-title text-dark-grey text-uppercase letter-spacing-2">
                   {location.title}
                 </h3>
-                <Link to="/locations" className="btn btn--dark locations__btn">
+                <Link
+                  to="/locations"
+                  className="link link--dark locations__btn"
+                >
                   See Location
                 </Link>
               </div>

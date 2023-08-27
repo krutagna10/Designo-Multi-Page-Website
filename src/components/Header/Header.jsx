@@ -48,7 +48,6 @@ function Header() {
             ))}
           </ul>
         </nav>
-
         <button
           className="header__mobile-nav-toggle"
           aria-controls="header__nav-list"

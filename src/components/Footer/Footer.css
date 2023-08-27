@@ -2,22 +2,6 @@
   position: relative;
 }
 
-.footer-section:not(.footer-section--contact)::before {
-  content: "";
-  position: absolute;
-  min-height: 10rem;
-  background-color: var(--clr-black);
-  bottom: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-@media (min-width: 48em) {
-  .footer-section:not(.footer-section--contact)::before {
-    bottom: 90%;
-  }
-}
-
 .footer {
   display: grid;
   gap: 2rem;

@@ -1,14 +1,12 @@
 import errorIcon from "../../assets/contact/desktop/icon-error.svg";
 import LocationsCard from "../../components/LocationsCard/LocationsCard.jsx";
 import "./Contact.css";
-import Header from "../../components/Header/Header.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
 import Section from "../../components/UI/Section/Section.jsx";
+import Layout from "../../layout/Layout.jsx";
 
 function Contact() {
   return (
-    <>
-      <Header />
+    <Layout>
       <Section className="contact-section hero-section">
         <div className="contact container grid grid-cols-2 bg-peach">
           <div className="contact__text-content flow flex flex-col justify-center">
@@ -118,7 +116,7 @@ function Contact() {
                 </div>
               </div>
 
-              <button className="contact__submit-btn btn btn--light">
+              <button className="contact__submit-btn link link--light">
                 Submit
               </button>
             </form>
@@ -126,8 +124,7 @@ function Contact() {
         </div>
       </Section>
       <LocationsCard />
-      <Footer className="footer-section--contact" />
-    </>
+    </Layout>
   );
 }
 

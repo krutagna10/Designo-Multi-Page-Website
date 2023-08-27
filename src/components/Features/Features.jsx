@@ -9,19 +9,19 @@ const features = [
   {
     title: "Passionate",
     description:
-      "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions",
+      "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose to customers.",
     image: illustrationPassionate,
   },
   {
     title: "Resourceful",
     description:
-      "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer clients’ needs.",
+      "Everything that we do has a purpose. We use an agile approach in all of our projects and value customer needs.",
     image: illustrationResourceFul,
   },
   {
     title: "Friendly",
     description:
-      "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
+      "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers.",
     image: illustrationFriendly,
   },
 ];
@@ -31,8 +31,8 @@ function Features() {
     <Section>
       <Container className="grid gap grid-cols-3">
         {features.map((feature, index) => (
-          <div key={index} className="feature grid">
-            <div className="feature__image-wrapper">
+          <div key={index} className="feature grid gap">
+            <div className="feature__image-wrapper grid place-content-center">
               <img
                 src={feature.image}
                 className="feature__image"
@@ -40,11 +40,11 @@ function Features() {
                 aria-hidden="true"
               />
             </div>
-            <div className="feature__text-content flow text-center">
-              <h2 className="feature__heading tertiary-title fs-200 uppercase letter-spacing-2">
+            <div className="flow text-center">
+              <h2 className="feature__title fs-200 text-black fs-200 text-uppercase">
                 {feature.title}
               </h2>
-              <p className="feature__text">{feature.description}</p>
+              <p className="text-black">{feature.description}</p>
             </div>
           </div>
         ))}

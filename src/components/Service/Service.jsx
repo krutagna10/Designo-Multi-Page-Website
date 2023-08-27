@@ -5,12 +5,10 @@ function Service({ className, title, to }) {
   return (
     <Link
       to={to}
-      className={`service grid place-items-center gap ${className}`}
+      className={`service grid place-content-center gap text-white ${className}`}
     >
-      <span className="service__heading secondary-title letter-spacing-1">
-        {title}
-      </span>
-      <span className="service__text fs-100 letter-spacing-2">
+      <span className="service__title fs-400">{title}</span>
+      <span className="service__text fs-100">
         View Projects <span className="service__link-symbol">&#62;</span>
       </span>
     </Link>

@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
-import heroPhoneImage from "../../assets/home/desktop/image-hero-phone.png";
+import heroPhoneImage from "../../assets/home/desktop/image-hero-phone-cropped.png";
 import Features from "../../components/Features/Features.jsx";
 import "./Home.css";
 import Service from "../../components/Service/Service.jsx";
 import Container from "../../components/UI/Container/Container.jsx";
 import Section from "../../components/UI/Section/Section.jsx";
+import CustomLink from "../../components/UI/CustomLink/CustomLink.jsx";
 
 const services = [
   {
@@ -30,26 +31,22 @@ function Home() {
   return (
     <Layout>
       <Section className="hero-section">
-        <Container className="hero grid bg-peach">
-          <div className="hero__description hero-flow">
-            <h1 className="hero__heading primary-title text-white">
+        <Container className="hero grid gap bg-peach">
+          <div className="hero__content grid gap place-content-center">
+            <h1 className="fs-500">
               Award-winning custom designs and digital branding solutions
             </h1>
-            <p className="hero__text fs-100 text-white">
+            <p>
               With over 10 years in the industry, we are experienced in creating
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <Link to="/about" className="btn btn--light hero__btn fs-100">
-              Learn more
-            </Link>
+            <CustomLink to="/about" className="hero__link link--light">
+              Learn More
+            </CustomLink>
           </div>
-          <div className="hero__image-wrapper">
-            <img
-              src={heroPhoneImage}
-              className="hero__image"
-              alt="phone image"
-            />
+          <div className="hero__image-wrapper grid place-content-center">
+            <img className="hero__image" src={heroPhoneImage} alt="Phone" />
           </div>
         </Container>
       </Section>

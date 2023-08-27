@@ -9,7 +9,7 @@ function Card({ title, description, image, alt }) {
           <img src={image} className="card__image" alt={alt} />
         </span>
         <span className="card__content text-center flow">
-          <span className="card__title tertiary-title uppercase letter-spacing-2 text-peach">
+          <span className="card__title tertiary-title text-uppercase letter-spacing-2 text-peach">
             {title}
           </span>
           <span className="card__description text-dark-grey fs-100">

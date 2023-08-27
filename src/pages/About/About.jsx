@@ -10,7 +10,7 @@ function About() {
       <Section className="about-section hero-section">
         <div className="about container about--hero bg-peach grid">
           <div className="about__image-wrapper about__image-wrapper--hero"></div>
-          <div className="about__text-content hero-flow">
+          <div className="about__text-content flow">
             <h1 className="about__heading primary-title text-white">
               About Us
             </h1>
@@ -27,7 +27,7 @@ function About() {
       <section className="talent-section section-padding">
         <div className="about about--talent container bg-very-light-peach grid">
           <div className="about__image-wrapper about__image-wrapper--talent"></div>
-          <div className="about__text-content hero-flow">
+          <div className="about__text-content flow">
             <h1 className="about__heading secondary-title text-peach">
               World-class talent
             </h1>
@@ -51,7 +51,7 @@ function About() {
       <section className="deal-section section-padding">
         <div className="container about about--deal grid bg-very-light-peach">
           <div className="about__image-wrapper about__image-wrapper--deal"></div>
-          <div className="about__text-content hero-flow">
+          <div className="about__text-content flow">
             <h1 className="about__heading secondary-title text-peach">
               The real deal
             </h1>
