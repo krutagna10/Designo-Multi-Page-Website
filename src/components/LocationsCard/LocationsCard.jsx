@@ -3,6 +3,8 @@ import illustrationCanada from "../../assets/shared/desktop/illustration-canada.
 import illustrationAustralia from "../../assets/shared/desktop/illustration-australia.svg";
 import illustrationUnitedKingdom from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import "./LocationsCard.css";
+import Section from "../UI/Section/Section.jsx";
+import Container from "../UI/Container/Container.jsx";
 
 const locations = [
   {
@@ -22,8 +24,8 @@ const locations = [
 function LocationsCard() {
   return (
     <>
-      <section className="locations-section section-padding">
-        <div className="container locations grid">
+      <Section className="locations-section">
+        <Container className="locations grid">
           {locations.map((location, index) => (
             <div
               key={index}
@@ -50,8 +52,8 @@ function LocationsCard() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
+        </Container>
+      </Section>
     </>
   );
 }

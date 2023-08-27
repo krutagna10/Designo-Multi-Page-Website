@@ -2,9 +2,12 @@ import Layout from "../../layout/Layout.jsx";
 import DesignHero from "../../components/DesignHero/DesignHero.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import Card from "../../components/Card/Card.jsx";
-import Service from "../../components/Service/Service.jsx";
+import Services from "../../components/Services/Services.jsx";
 import { services } from "../../data/shared.js";
 import { cards } from "../../data/web-design.js";
+import Section from "../../components/UI/Section/Section.jsx";
+import Container from "../../components/UI/Container/Container.jsx";
+import Cards from "../../components/Cards/Cards.jsx";
 
 function WebDesign() {
   const webServices = services.filter(
@@ -17,25 +20,12 @@ function WebDesign() {
         title="Web design"
         description="We build websites that serve as powerful marketing tools and bring memorable brand experiences"
       />
-      <section className="cards-section section-padding">
-        <div className="container grid grid-cols-3">
-          {cards.map((card, index) => (
-            <Card key={index} {...card} />
-          ))}
-        </div>
-      </section>
-      <section className="services__section section-padding">
-        <div className="container grid grid-cols-2">
-          {webServices.map((service, index) => (
-            <Service
-              key={index}
-              title={service.title}
-              to={service.to}
-              className={service.className}
-            />
-          ))}
-        </div>
-      </section>
+      <Cards cards={cards} />
+      <Section className="services-section">
+        <Container className="grid gap grid-cols-2">
+          <Services services={webServices} />
+        </Container>
+      </Section>
       <CallToAction />
     </Layout>
   );

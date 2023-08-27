@@ -1,9 +1,9 @@
-/* Hero Section */
 .hero {
   padding-inline: var(--spacing-300) !important;
   background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  border-radius: var(--border-radius-100);
 }
 
 .hero__image-wrapper {
@@ -44,23 +44,23 @@
   }
 }
 
-/* Service Section */
+/* Services Section Styling for Home */
 @media (min-width: 48em) {
-  .service__container {
+  .services--home {
     grid-template-areas:
       "first second"
       "first third";
   }
 
-  .service__container .service:nth-child(1) {
+  .services--home .service:nth-child(1) {
     grid-area: first;
   }
 
-  .service__container .service:nth-child(2) {
+  .services--home.service:nth-child(2) {
     grid-area: second;
   }
 
-  .service__container .service:nth-child(3) {
+  .services--home.service:nth-child(3) {
     grid-area: third;
   }
 }

@@ -2,12 +2,13 @@ import Layout from "../../layout/Layout.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import "./Locations.css";
 import Section from "../../components/UI/Section/Section.jsx";
+import Container from "../../components/UI/Container/Container.jsx";
 
 function Locations() {
   return (
     <Layout>
       <Section className="location-section hero-section">
-        <div className="location location--canada container grid">
+        <Container className="location location--canada container grid">
           <div className="location__text-content bg-very-light-peach flow flex flex-col justify-center">
             <h2 className="location__heading secondary-title text-peach">
               Canada
@@ -39,7 +40,7 @@ function Locations() {
             </div>
           </div>
           <div className="location__image-wrapper"></div>
-        </div>
+        </Container>
 
         <div className="location location--australia container grid">
           <div className="location__image-wrapper"></div>
