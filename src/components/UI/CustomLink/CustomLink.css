@@ -1,0 +1,29 @@
+.link {
+  font-size: var(--fs-100);
+  display: block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  color: var(--clr-white);
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+}
+
+.link--light {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+}
+
+.link--light:hover {
+  background-color: var(--clr-light-peach);
+  color: var(--clr-white);
+}
+
+.link--dark {
+  background-color: var(--clr-peach);
+}
+
+.link--dark:hover {
+  background-color: var(--clr-light-peach);
+}
