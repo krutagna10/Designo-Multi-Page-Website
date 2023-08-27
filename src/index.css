@@ -33,8 +33,6 @@
   --spacing-400: clamp(2rem, calc(1.65rem + 1.74vw), 3rem);
   --spacing-500: clamp(3rem, calc(2.3rem + 3.48vw), 5rem);
 
-  --section-padding: clamp(3.75rem, 10vw, 5rem);
-
   /* Border Radius*/
   --border-radius-100: 0.75rem;
 
@@ -132,10 +130,6 @@ body {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
-}
-
-.section-padding {
-  padding-block: var(--section-padding);
 }
 
 .flow > * + * {
@@ -267,18 +261,9 @@ body {
   transform: translateY(-130%);
 }
 
-.container {
-  max-width: 75rem;
-  padding-inline: 1rem;
-  margin: 0 auto;
-}
-
+/* Flex Utility */
 .flex {
   display: flex;
-}
-
-.gap {
-  gap: var(--spacing-200);
 }
 
 .flex--center {
@@ -302,6 +287,7 @@ body {
   flex-direction: column;
 }
 
+/* Grid Utility */
 .grid {
   display: grid;
 }
@@ -322,4 +308,9 @@ body {
   .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Gap for flexbox and grid */
+.gap {
+  gap: var(--spacing-200);
 }

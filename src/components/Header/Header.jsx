@@ -1,23 +1,9 @@
-import { Link } from "react-router-dom";
-import logoDark from "../../assets/shared/desktop/logo-dark.png";
-import "./Header.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "../UI/Container/Container.jsx";
-
-const HEADER_LINKS = [
-  {
-    to: "/about",
-    text: "Our Content",
-  },
-  {
-    to: "/locations",
-    text: "Locations",
-  },
-  {
-    to: "/contact",
-    text: "Contact",
-  },
-];
+import logoDark from "../../assets/shared/desktop/logo-dark.png";
+import { links } from "../../data/header.js";
+import "./Header.css";
 
 function Header() {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
@@ -39,7 +25,7 @@ function Header() {
             className="header__nav-list flex gap"
             data-visible={isNavigationOpen}
           >
-            {HEADER_LINKS.map((link, index) => (
+            {links.map((link, index) => (
               <li key={index}>
                 <Link to={link.to} className="header__nav-link fs-300">
                   {link.text}

@@ -1,31 +1,13 @@
-import { Link } from "react-router-dom";
 import Layout from "../../layout/Layout.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import heroPhoneImage from "../../assets/home/desktop/image-hero-phone-cropped.png";
 import Features from "../../components/Features/Features.jsx";
-import "./Home.css";
 import Service from "../../components/Service/Service.jsx";
 import Container from "../../components/UI/Container/Container.jsx";
 import Section from "../../components/UI/Section/Section.jsx";
 import CustomLink from "../../components/UI/CustomLink/CustomLink.jsx";
-
-const services = [
-  {
-    className: "service--web",
-    title: "Web Design",
-    to: "/web-design",
-  },
-  {
-    className: "service--app",
-    title: "App Design",
-    to: "/app-design",
-  },
-  {
-    className: "service--graphic",
-    title: "Graphic Design",
-    to: "/graphic-design",
-  },
-];
+import { services } from "../../data/shared.js";
+import "./Home.css";
 
 function Home() {
   return (

@@ -2,55 +2,11 @@ import { Link } from "react-router-dom";
 import logoLight from "../../assets/shared/desktop/logo-light.png";
 import "./Footer.css";
 import { IonIcon } from "@ionic/react";
-import {
-  logoFacebook,
-  logoInstagram,
-  logoPinterest,
-  logoTwitter,
-  logoYoutube,
-} from "ionicons/icons";
-
-const FOOTER_LINKS = [
-  {
-    to: "/about",
-    text: "Our Content",
-  },
-  {
-    to: "/locations",
-    text: "Locations",
-  },
-  {
-    to: "/contact",
-    text: "Contact",
-  },
-];
-
-const FOOTER_SOCIAL_LINKS = [
-  {
-    href: "https://www.facebook.com/",
-    logo: logoFacebook,
-  },
-  {
-    href: "https://www.youtube.com/",
-    logo: logoYoutube,
-  },
-  {
-    href: "https://twitter.com/",
-    logo: logoTwitter,
-  },
-  {
-    href: "https://in.pinterest.com/",
-    logo: logoPinterest,
-  },
-  {
-    href: "https://www.instagram.com/",
-    logo: logoInstagram,
-  },
-];
+import { footerNavLinks, footerSocialLinks } from "../../data/footer.js";
 
 function Footer() {
   return (
-    <footer className="footer-section section-padding bg-black">
+    <footer className="footer-section bg-black">
       <div className="footer container">
         <a
           className="footer__logo-link flex justify-center items-center"
@@ -60,7 +16,7 @@ function Footer() {
         </a>
         <nav className="footer__nav" aria-label="secondary navigation">
           <ul className="footer__nav-list flex flex-col gap">
-            {FOOTER_LINKS.map((link, index) => (
+            {footerNavLinks.map((link, index) => (
               <li key={index}>
                 <Link className="footer__nav-link" to={link.to}>
                   {link.text}
@@ -86,7 +42,7 @@ function Footer() {
           </a>
         </div>
         <div className="footer__social-logos-wrapper flex gap">
-          {FOOTER_SOCIAL_LINKS.map((socialLink, index) => (
+          {footerSocialLinks.map((socialLink, index) => (
             <a
               key={index}
               className="footer__social-logo-link"

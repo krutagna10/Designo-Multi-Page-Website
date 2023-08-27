@@ -1,3 +1,4 @@
+/* Hero Section */
 .hero {
   padding-inline: var(--spacing-300) !important;
   background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
@@ -9,7 +10,6 @@
   padding-block: var(--spacing-300);
 }
 
-/* Hero Section */
 @media (max-width: 47.99em) {
   .hero {
     padding-top: 3rem;
