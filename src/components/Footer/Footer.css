@@ -1,25 +1,13 @@
-.footer-section {
-  position: relative;
-  padding: var(--spacing-500);
-}
-
 .footer {
-  display: grid;
-  gap: 2rem;
-  place-items: center;
-  text-align: center;
-  position: relative;
+  padding-block: var(--spacing-500);
 }
 
-.footer__logo-link {
-  max-width: 10rem;
+.footer__link {
+  max-width: 12.5rem;
 }
 
 .footer__nav-link {
-  color: var(--clr-white);
-  text-transform: uppercase;
   letter-spacing: var(--letter-spacing-100);
-  font-size: 0.875rem;
   transition: all 0.3s ease;
 }
 
@@ -29,42 +17,42 @@
 
 .footer__contact-link {
   display: block;
-  color: inherit;
-}
-
-.footer__social-logo {
-  font-size: 1.75rem;
-  color: var(--clr-white);
+  color: var(--clr-grey);
   transition: all 0.3s ease;
 }
 
-.footer__social-logo:hover {
+.footer__contact-link:hover {
+  color: var(--clr-white);
+}
+
+.footer__social-link:hover {
+  transition: all 0.3s ease;
   color: var(--clr-peach);
+}
+
+@media (max-width: 47.99em) {
+  .footer {
+    text-align: center;
+    place-items: center;
+  }
+
+  .footer__nav-list {
+    flex-direction: column;
+  }
+
+  .footer__link {
+    justify-self: center;
+  }
 }
 
 @media (min-width: 48em) {
   .footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    row-gap: 5rem;
-    text-align: left;
-    place-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: var(--spacing-500) !important;
   }
 
-  .footer::after {
-    grid-column: 1/-1;
-    grid-row-start: 2;
-    content: "";
-    position: relative;
-    height: 0.0625rem;
-    background-color: var(--clr-white);
-    opacity: 0.15;
-    width: 100%;
-  }
-
-  .footer__logo-link {
-    max-width: 12rem;
-    justify-content: flex-start !important;
+  .footer > * {
+    /*border: 3px solid red;*/
   }
 
   .footer__nav {
@@ -72,12 +60,7 @@
     justify-self: end;
   }
 
-  .footer__nav-list {
-    flex-direction: row !important;
-    gap: 3rem !important;
-  }
-
-  .footer__social-logos-wrapper {
-    place-self: center;
+  .footer__social-links {
+    justify-self: end;
   }
 }

@@ -12,7 +12,7 @@
 
 @media (max-width: 47.99em) {
   .hero {
-    padding-top: 3rem;
+    padding-top: var(--spacing-400);
     text-align: center;
     overflow: hidden;
   }
@@ -30,17 +30,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
-}
-
-@media (min-width: 48em) {
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hero__link {
-    justify-self: left;
   }
 }
 

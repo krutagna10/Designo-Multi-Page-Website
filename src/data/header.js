@@ -1,7 +1,7 @@
 const links = [
   {
     to: "/about",
-    text: "Our Content",
+    text: "Our Company",
   },
   {
     to: "/locations",

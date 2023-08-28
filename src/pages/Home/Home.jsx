@@ -15,7 +15,7 @@ function Home() {
     <Layout>
       <Section className="hero-section">
         <Wrapper>
-          <Container className="hero grid gap bg-peach">
+          <Container className="hero grid grid-cols-2 gap bg-peach">
             <div className="hero__content grid gap place-content-center">
               <h1 className="fs-500">
                 Award-winning custom designs and digital branding solutions

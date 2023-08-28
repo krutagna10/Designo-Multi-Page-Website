@@ -9,7 +9,7 @@ import {
 const footerNavLinks = [
   {
     to: "/about",
-    text: "Our Content",
+    text: "Our Company",
   },
   {
     to: "/locations",

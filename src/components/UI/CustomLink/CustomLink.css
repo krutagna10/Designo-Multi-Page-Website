@@ -1,5 +1,6 @@
 .link {
   font-size: var(--fs-100);
+  width: max-content;
   display: block;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;

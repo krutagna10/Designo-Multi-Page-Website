@@ -1,6 +1,5 @@
 import Layout from "../../layout/Layout.jsx";
 import DesignHero from "../../components/DesignHero/DesignHero.jsx";
-import Card from "../../components/Card/Card.jsx";
 import Services from "../../components/Services/Services.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import { services } from "../../data/shared.js";

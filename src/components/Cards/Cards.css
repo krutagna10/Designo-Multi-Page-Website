@@ -1,0 +1,52 @@
+.card__link {
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card__link {
+  display: block;
+}
+
+.card__link span {
+  display: block;
+}
+
+.card__link:hover {
+  background-color: var(--clr-peach);
+}
+
+.card__image {
+  transition: all 0.4s ease;
+}
+
+.card__link:hover .card__image {
+  transform: scale(1.03);
+}
+
+.card__link:hover .card__title,
+.card__link:hover .card__description {
+  color: var(--clr-white);
+}
+
+.card__content {
+  padding: var(--spacing-300);
+}
+
+.card__title {
+  letter-spacing: var(--letter-spacing-200);
+}
+
+@media (min-width: 32em) {
+  .card__link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 48em) {
+  .card__link {
+    flex-direction: column;
+  }
+}

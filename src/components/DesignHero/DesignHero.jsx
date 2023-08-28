@@ -7,10 +7,10 @@ function DesignHero({ title, description }) {
   return (
     <Section>
       <Wrapper>
-        <Container className="design-hero grid place-items-center bg-peach text-center">
-          <div className="design-hero__content flow">
-            <h1 className="primary-title text-white">{title}</h1>
-            <p className="fs-100 text-white"> {description}</p>
+        <Container className="design-hero grid place-content-center gap bg-peach text-center">
+          <div className="flow">
+            <h1 className="fs-500">{title}</h1>
+            <p className="fs-100"> {description}</p>
           </div>
         </Container>
       </Wrapper>

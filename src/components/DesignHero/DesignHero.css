@@ -1,6 +1,5 @@
 .design-hero {
   min-height: 18rem;
-  gap: 3rem;
   border-radius: var(--border-radius-100);
   background-repeat: no-repeat;
   background-image: url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
@@ -11,11 +10,5 @@
   .design-hero {
     background-image: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
     background-position: right center;
-  }
-}
-
-@media (min-width: 48em) {
-  .design-hero__content {
-    width: 50%;
   }
 }
