@@ -1,4 +1,3 @@
-import errorIcon from "../../assets/contact/desktop/icon-error.svg";
 import LocationsCard from "../../components/LocationsCard/LocationsCard.jsx";
 import "./Contact.css";
 import Section from "../../components/UI/Section/Section.jsx";
