@@ -12,7 +12,7 @@ const locations = [
     image: illustrationCanada,
   },
   {
-    title: "United Kingdom",
+    title: "UK",
     image: illustrationUnitedKingdom,
   },
   {
@@ -24,23 +24,15 @@ const locations = [
 function LocationsCard() {
   return (
     <>
-      <Section className="locations-section">
-        <Container className="locations grid">
+      <Section>
+        <Container className="locations grid grid-cols-3 gap">
           {locations.map((location, index) => (
-            <div
-              key={index}
-              className="locations__item flex flex-col items-center"
-            >
+            <div key={index} className="grid place-items-center">
               <div className="locations__image-wrapper">
-                <img
-                  src={location.image}
-                  className="locations__image"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <img src={location.image} alt="" aria-hidden="true" />
               </div>
-              <div className="locations__text-content grid place-content-center text-center">
-                <h3 className="locations__heading tertiary-title text-dark-grey text-uppercase letter-spacing-2">
+              <div className="locations__content grid place-items-center gap text-center">
+                <h3 className="locations__title fs-200 text-dark-grey text-uppercase">
                   {location.title}
                 </h3>
                 <Link

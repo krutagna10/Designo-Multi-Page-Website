@@ -1,5 +1,5 @@
 .hero {
-  padding-inline: var(--spacing-300) !important;
+  padding-inline: var(--spacing-400) !important;
   background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
   background-position: right center;

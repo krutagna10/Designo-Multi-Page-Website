@@ -3,3 +3,7 @@
   padding-inline: 1rem;
   margin: 0 auto;
 }
+
+.container--rounded {
+  border-radius: var(--border-radius-100);
+}

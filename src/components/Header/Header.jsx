@@ -40,7 +40,7 @@ function Header() {
           aria-expanded={isNavigationOpen}
           onClick={handleToggleIsNavigationOpen}
         >
-          <span className="sr-only">Menu</span>
+          <span className="visually-hidden">Menu</span>
         </button>
       </Container>
     </header>

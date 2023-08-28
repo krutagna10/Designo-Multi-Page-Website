@@ -1,21 +1,18 @@
-.locations__text-content {
-  padding: 2rem 2rem;
+.locations__content {
+  padding: var(--spacing-300);
 }
+
 .locations__image-wrapper {
   position: relative;
 }
+
 .locations__image-wrapper::before {
   content: "";
   position: absolute;
   background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
   inset: 0;
 }
-.locations__btn {
-  align-self: center;
-  margin-top: 1rem;
-}
-@media (min-width: 64em) {
-  .locations {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
+.locations__title {
+  letter-spacing: var(--letter-spacing-200);
 }
