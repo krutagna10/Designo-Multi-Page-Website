@@ -3,12 +3,13 @@ import LocationsCard from "../../components/LocationsCard/LocationsCard.jsx";
 import "./Contact.css";
 import Section from "../../components/UI/Section/Section.jsx";
 import Layout from "../../layout/Layout.jsx";
+import Container from "../../components/UI/Container/Container.jsx";
 
 function Contact() {
   return (
     <Layout>
       <Section className="contact-section hero-section">
-        <div className="contact container grid grid-cols-2 bg-peach">
+        <Container className="contact grid grid-cols-2 bg-peach">
           <div className="contact__text-content flow flex flex-col justify-center">
             <h1 className="contact__heading primary-title text-white">
               Contact us
@@ -121,7 +122,7 @@ function Contact() {
               </button>
             </form>
           </div>
-        </div>
+        </Container>
       </Section>
       <LocationsCard />
     </Layout>
