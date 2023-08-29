@@ -3,8 +3,6 @@ import Wrapper from "../UI/Wrapper/Wrapper.jsx";
 import Container from "../UI/Container/Container.jsx";
 import "./LocationCards.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import "leaflet/dist/images/marker-shadow.png";
 
 function LocationCards({ locations }) {
   return (
