@@ -3,11 +3,11 @@ import Footer from "../components/Footer/Footer.jsx";
 
 function Layout({ children }) {
   return (
-    <main>
+    <>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
-    </main>
+    </>
   );
 }
 
