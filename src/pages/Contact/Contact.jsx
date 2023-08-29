@@ -1,4 +1,4 @@
-import LocationCards from "../../components/LocationCards/LocationCards.jsx";
+import CountryCards from "../../components/CountryCards/CountryCards.jsx";
 import "./Contact.css";
 import Section from "../../components/UI/Section/Section.jsx";
 import Layout from "../../layout/Layout.jsx";
@@ -25,7 +25,7 @@ function Contact() {
           </Container>
         </Wrapper>
       </Section>
-      <LocationCards />
+      <CountryCards />
     </Layout>
   );
 }

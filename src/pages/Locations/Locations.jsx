@@ -1,16 +1,13 @@
 import Layout from "../../layout/Layout.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
-import "./Locations.css";
-import Section from "../../components/UI/Section/Section.jsx";
-import Container from "../../components/UI/Container/Container.jsx";
-import Wrapper from "../../components/UI/Wrapper/Wrapper.jsx";
-import MapCards from "../../components/MapCards/MapCards.jsx";
+import LocationCards from "../../components/LocationCards/LocationCards.jsx";
 import locations from "../../data/locations.js";
+import "./Locations.css";
 
 function Locations() {
   return (
     <Layout>
-      <MapCards locations={locations} />
+      <LocationCards locations={locations} />
       <CallToAction />
     </Layout>
   );

@@ -1,0 +1,18 @@
+.country__image-wrapper {
+  position: relative;
+}
+
+.country__image-wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  inset: 0;
+}
+
+.country__content {
+  padding: var(--spacing-300);
+}
+
+.country__content > h3 {
+  letter-spacing: var(--letter-spacing-200);
+}
