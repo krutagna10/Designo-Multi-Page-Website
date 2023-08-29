@@ -7,25 +7,29 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 function LocationCards({ locations }) {
   return (
     <Section className="location-section hero-section flow">
-      {locations.map((location, index) => (
-        <Wrapper key={index}>
-          <Container className="location container--rounded location--canada grid">
-            <MapContainer
-              center={[location.lat, location.long]}
-              zoom={13}
-              scrollWheelZoom={false}
-            >
-              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={[location.lat, location.long]}>
-                <Popup>
-                  <strong>{location.office}</strong>
-                  <br />
-                  {location.street}
-                  <br />
-                  {location.city}
-                </Popup>
-              </Marker>
-            </MapContainer>
+      {locations.map((location) => (
+        <Wrapper key={location.id}>
+          <Container
+            className={`location location--${location.id} container--rounded grid`}
+          >
+            <div className="location__map">
+              <MapContainer
+                center={[location.lat, location.long]}
+                zoom={13}
+                scrollWheelZoom={false}
+              >
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                <Marker position={[location.lat, location.long]}>
+                  <Popup>
+                    <strong>{location.office}</strong>
+                    <br />
+                    {location.street}
+                    <br />
+                    {location.city}
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </div>
             <div className="location__content bg-very-light-peach flow">
               <h2 className="fs-400 text-peach">{location.country}</h2>
               <div className="grid">

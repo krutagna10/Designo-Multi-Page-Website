@@ -1,5 +1,6 @@
 const locations = [
   {
+    id: "canada",
     country: "Canada",
     lat: 43.644190986027894,
     long: -79.39455012883572,
@@ -10,6 +11,7 @@ const locations = [
     email: "contact@designo.co",
   },
   {
+    id: "australia",
     country: "Australia",
     lat: -30.329143837279947,
     long: 149.78821844232854,
@@ -20,6 +22,7 @@ const locations = [
     email: "contact@designo.au",
   },
   {
+    id: "uk",
     country: "United Kingdom",
     lat: 53.71041183125111,
     long: -1.3418780472557361,

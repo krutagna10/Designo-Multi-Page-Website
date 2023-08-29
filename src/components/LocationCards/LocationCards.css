@@ -28,6 +28,25 @@
 @media (min-width: 48em) {
   .location {
     gap: var(--spacing-100);
+  }
+
+  .location--canada,
+  .location--uk {
+    grid-template-columns: 70fr 30fr;
+    grid-template-areas: "content map";
+  }
+
+  .location--canada > .location__map,
+  .location--uk > .location__map {
+    grid-area: map;
+  }
+
+  .location--canada > .location__content,
+  .location--uk > .location__content {
+    grid-area: content;
+  }
+
+  .location--australia {
     grid-template-columns: 30fr 70fr;
   }
 
