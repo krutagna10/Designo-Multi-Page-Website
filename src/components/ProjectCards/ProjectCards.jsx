@@ -1,9 +1,9 @@
 import Section from "../UI/Section/Section.jsx";
 import Container from "../UI/Container/Container.jsx";
 import { Link } from "react-router-dom";
-import "./Cards.css";
+import "./ProjectCards.css";
 
-function Cards({ cards }) {
+function ProjectCards({ cards }) {
   return (
     <Section className="cards-section">
       <Container className="container grid gap grid-cols-3">
@@ -27,4 +27,4 @@ function Cards({ cards }) {
   );
 }
 
-export default Cards;
+export default ProjectCards;

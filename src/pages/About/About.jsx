@@ -1,5 +1,5 @@
 import Layout from "../../layout/Layout.jsx";
-import LocationsCard from "../../components/LocationsCard/LocationsCard.jsx";
+import LocationCards from "../../components/LocationCards/LocationCards.jsx";
 import CallToAction from "../../components/CallToAction/CallToAction.jsx";
 import "./About.css";
 import Section from "../../components/UI/Section/Section.jsx";
@@ -81,7 +81,7 @@ function About() {
           </Container>
         </Wrapper>
       </Section>
-      <LocationsCard />
+      <LocationCards />
       <Section>
         <Wrapper>
           <Container className="about about--deal grid bg-very-light-peach">

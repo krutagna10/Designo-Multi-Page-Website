@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import illustrationCanada from "../../assets/shared/desktop/illustration-canada.svg";
 import illustrationAustralia from "../../assets/shared/desktop/illustration-australia.svg";
 import illustrationUnitedKingdom from "../../assets/shared/desktop/illustration-united-kingdom.svg";
-import "./LocationsCard.css";
+import "./LocationCards.css";
 import Section from "../UI/Section/Section.jsx";
 import Container from "../UI/Container/Container.jsx";
 
@@ -21,7 +21,7 @@ const locations = [
   },
 ];
 
-function LocationsCard() {
+function LocationCards() {
   return (
     <>
       <Section>
@@ -50,4 +50,4 @@ function LocationsCard() {
   );
 }
 
-export default LocationsCard;
+export default LocationCards;

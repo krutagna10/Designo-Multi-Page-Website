@@ -6,7 +6,7 @@ import { services } from "../../data/shared.js";
 import { cards } from "../../data/web-design.js";
 import Section from "../../components/UI/Section/Section.jsx";
 import Container from "../../components/UI/Container/Container.jsx";
-import Cards from "../../components/Cards/Cards.jsx";
+import ProjectCards from "../../components/ProjectCards/ProjectCards.jsx";
 
 function WebDesign() {
   const webServices = services.filter(
@@ -19,7 +19,7 @@ function WebDesign() {
         title="Web design"
         description="We build websites that serve as powerful marketing tools and bring memorable brand experiences"
       />
-      <Cards cards={cards} />
+      <ProjectCards cards={cards} />
       <Section className="services-section">
         <Container className="grid gap grid-cols-2">
           <Services services={webServices} />
