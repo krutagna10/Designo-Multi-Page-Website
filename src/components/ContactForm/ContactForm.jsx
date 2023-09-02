@@ -1,8 +1,12 @@
 import "./ContactForm.css";
 
 function ContactForm() {
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
-    <form className="form flow">
+    <form className="form flow" onSubmit={handleSubmit}>
       <div className="form__control">
         <input className="form__input" type="text" placeholder="Name" />
       </div>
